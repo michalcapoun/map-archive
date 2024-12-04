@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Map Archive</title>
+  </head>
+  <body>
+    <h1>Welcome Map Archive</h1>
+    <p>Enter your map details to get started!</p>
+
+    <form action="/add-trip" method="POST">
+      <label for="mapLink">Map Link:</label>
+      <input type="text" id="mapLink" name="mapLink" required /><br /><br />
+
+      <label for="tripName">Trip Name:</label>
+      <input type="text" id="tripName" name="tripName" required /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
